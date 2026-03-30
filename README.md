@@ -45,10 +45,10 @@ VOID removes objects from videos along with all interactions they induce on the 
 
 VOID uses two transformer checkpoints, trained sequentially. You can run inference with Pass 1 alone or chain both passes for higher temporal consistency.
 
-| Model | Description | HuggingFace | Google Drive |
-|-------|-------------|-------------|--------------|
-| **VOID Pass 1** | Base inpainting model | [Download](#) | [Download](#) |
-| **VOID Pass 2** | Warped-noise refinement model | [Download](#) | [Download](#) |
+| Model | Description | HuggingFace |
+|-------|-------------|-------------|
+| **VOID Pass 1** | Base inpainting model | [Download](https://huggingface.co/netflix/void-model/blob/main/void_pass1.safetensors) |
+| **VOID Pass 2** | Warped-noise refinement model | [Download](https://huggingface.co/netflix/void-model/blob/main/void_pass2.safetensors) |
 
 Place checkpoints anywhere and pass the path via `--config.video_model.transformer_path` (Pass 1) or `--model_checkpoint` (Pass 2).
 
