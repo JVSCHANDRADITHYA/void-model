@@ -1,6 +1,6 @@
-# HuMoTo Counterfactual Video Generation Pipeline
+# HUMOTO Counterfactual Video Generation Pipeline
 
-This repository provides the code to generate **counterfactual paired videos** from the [HuMoTo](https://4d-humans.github.io/) human motion capture dataset. For each scene, the pipeline produces:
+This repository provides the code to generate **counterfactual paired videos** from the [HUMOTO](https://4d-humans.github.io/) human motion capture dataset. For each scene, the pipeline produces:
 
 - **`rgb_full.mp4`** — Full scene with human + objects + textures
 - **`rgb_removed.mp4`** — Same scene with human removed (objects fall via physics)
@@ -9,9 +9,9 @@ This repository provides the code to generate **counterfactual paired videos** f
 
 ## Prerequisites
 
-### 1. HuMoTo Dataset (Required)
+### 1. HUMOTO Dataset (Required)
 
-You must agree to the HuMoTo license terms and download the dataset yourself:
+You must agree to the HUMOTO license terms and download the dataset yourself:
 
 ```bash
 # After obtaining access, download to ./humoto_release/humoto_0805/
@@ -49,7 +49,7 @@ pip install numpy Pillow tqdm pyyaml streamlit
 
 ### Step 1: Character Conversion
 
-Convert HuMoTo sequences to use Remy/Sophie character models. This is a 4-step process per sequence: clear scale, transfer character skeleton, extract pose data, copy metadata.
+Convert HUMOTO sequences to use Remy/Sophie character models. This is a 4-step process per sequence: clear scale, transfer character skeleton, extract pose data, copy metadata.
 
 ```bash
 # Edit paths in the script first (HUMOTO_DIR, FBX paths, etc.)
@@ -109,7 +109,7 @@ blender --background --python render_paired_videos_blender_quadmask.py -- \
 **Key flags:**
 | Flag | Description |
 |------|-------------|
-| `-d` | Path to HuMoTo dataset directory |
+| `-d` | Path to HUMOTO dataset directory |
 | `-o` | Output directory |
 | `-s` | Sequence name(s) to render |
 | `-m` | Object model directory |
@@ -138,7 +138,7 @@ python convert_masks_to_grid_hybrid.py --input_dir ./output --output_dir ./outpu
 
 ## Kubric Pipeline (Object-Only Counterfactuals)
 
-A separate, self-contained pipeline using [Kubric](https://github.com/google-research/kubric) for generating counterfactual videos with Google Scanned Objects (GSO). Unlike the HuMoTo pipeline above, this does **not** involve human characters — it generates scenes with 3-7 objects where some are removed to observe changes in physics dynamics.
+A separate, self-contained pipeline using [Kubric](https://github.com/google-research/kubric) for generating counterfactual videos with Google Scanned Objects (GSO). Unlike the HUMOTO pipeline above, this does **not** involve human characters — it generates scenes with 3-7 objects where some are removed to observe changes in physics dynamics.
 
 ### How it works
 
@@ -246,4 +246,4 @@ humoto_proc_release/
 
 ## Citation
 
-If you use this pipeline, please cite the HuMoTo dataset according to their license terms.
+If you use this pipeline, please cite the HUMOTO dataset according to their license terms.
