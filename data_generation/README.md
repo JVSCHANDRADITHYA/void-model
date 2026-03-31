@@ -13,10 +13,8 @@ This repository provides the code to generate **counterfactual paired videos** f
 
 You must agree to the HUMOTO license terms and download the dataset yourself:
 
-```bash
-# After obtaining access, download to ./humoto_release/humoto_0805/
-aws s3 cp s3://g3i-data/4Danimation/humoto/licensed_release/release_with_research_license/ ./humoto_release/ --recursive
-```
+After obtaining access, download to ./humoto_release/humoto_0805/
+
 
 ### 2. Blender (Required)
 
