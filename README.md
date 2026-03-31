@@ -37,7 +37,7 @@ VOID removes objects from videos along with all interactions they induce on the 
 
 > **Example:** If a person holding a guitar is removed, VOID also removes the person's effect on the guitar — causing it to fall naturally.
 
-<video src="https://github.com/user-attachments/assets/6a42d96c-a0cc-424a-b599-2c75870688bd" width="100%" controls autoplay loop muted></video>
+<video src="https://github.com/user-attachments/assets/01fcc436-58f1-444c-b2ba-9e6ceba29e23" width="100%" controls autoplay loop muted></video>
 
 ---
 
