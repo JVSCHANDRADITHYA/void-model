@@ -91,7 +91,7 @@ cd sam2 && pip install -e .
 Download the pretrained base inpainting model from HuggingFace:
 
 ```bash
-huggingface-cli download alibaba-pai/CogVideoX-Fun-V1.5-5b-InP \
+hf download alibaba-pai/CogVideoX-Fun-V1.5-5b-InP \
     --local-dir ./CogVideoX-Fun-V1.5-5b-InP
 ```
 
@@ -121,7 +121,7 @@ VOID/
 ├── README.md
 ├── requirements.txt
 │
-├── CogVideoX-Fun-V1.5-5b-InP/     # huggingface-cli download alibaba-pai/CogVideoX-Fun-V1.5-5b-InP
+├── CogVideoX-Fun-V1.5-5b-InP/     # hf download alibaba-pai/CogVideoX-Fun-V1.5-5b-InP
 ├── void_pass1.safetensors          # download from huggingface.co/void-model (see Models above)
 ├── void_pass2.safetensors          # download from huggingface.co/void-model (see Models above)
 ├── training_data/                  # generated via data_generation/ pipeline (see Training section)
