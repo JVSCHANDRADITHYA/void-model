@@ -17,6 +17,9 @@
   <a href="https://huggingface.co/netflix/void-model" target="_blank" style="margin: 2px;">
     <img alt="Models" src="https://img.shields.io/badge/🤗%20HuggingFace-Models-orange" style="display: inline-block; vertical-align: middle;"/>
   </a>
+  <a href="https://huggingface.co/papers/2604.02296" target="_blank" style="margin: 2px;">
+    <img alt="Models" src="https://img.shields.io/badge/🤗%20HuggingFace-Paper-yellow" style="display: inline-block; vertical-align: middle;"/>
+  </a>
   <a href="https://colab.research.google.com/github/netflix/void-model/blob/main/notebook.ipynb" target="_blank" style="margin: 2px;">
     <img alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg" style="display: inline-block; vertical-align: middle;"/>
   </a>
